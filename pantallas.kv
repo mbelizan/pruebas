@@ -139,10 +139,9 @@
 				text: "[color=#315582][b]Calendario[/b][/color]"
 				font_size: 20
 				size_hint: .2, None
-				pos_hint: {"center_x": 0.5, "center_y": 0.25}
-				on_release: app.root.current = "etapas"
+				pos_hint: {"center_x": 0.5, "center_y": 0.25} 
 				md_bg_color: 0.93, 0.69, 0.63, 0.2
-				screen_manager.current = "calendario"
+				on_release: app.root.current = "calendario"
 				
 			MDRoundFlatButton:
 				id: botonBuscar
@@ -157,7 +156,7 @@
 
 <clientes>:
 	name: "clientes"
-	
+
 	MDLabel:
 		markup: True
 		text: "[i]Pantalla en progreso[/i]"
@@ -166,15 +165,16 @@
 	
 	MDRoundFlatButton:
 		id: boton3
-		text: "Volver pantalla principal"
+		text: "[color=#315582][b]Volver pantalla principal[/b][/color]"
 		size_hint: None, None
 		width: 100
 		pos_hint: {"center_x": 0.5, "center_y": 0.5}
+		md_bg_color: 0.93, 0.69, 0.63, 0.2
 		on_release: app.root.current = "Pantalla Principal"
 
 <etapas>:
 	name: "etapas"
-	
+
 	MDLabel:
 		markup: True
 		text: "[i]Pantalla en progreso[/i]"
@@ -183,35 +183,39 @@
 		
 	MDRoundFlatButton:
 		id: boton100000
-		text: "Volver pantalla principal"
+		text: "[color=#315582][b]Volver pantalla principal[/b][/color]"
 		size_hint: None, None
 		width: 100
 		pos_hint: {"center_x": 0.5, "center_y": 0.5}
+		md_bg_color: 0.93, 0.69, 0.63, 0.2
 		on_release: app.root.current = "Pantalla Principal"
 		
 <calendario>:
 	name: "calendario"
-	
+
 	MDLabel:
+		id: texto_calendario
 		markup: True
 		text: "[i]Pantalla en progreso[/i]"
 		font_size: 16
 		pos_hint: {"center_x": 0.5, "center_y": 0.95}
 
-	MDFlatButton:
+	MDRoundFlatButton:
 		id: abrir_calendario
-		text: "Abrir Calendario"
+		text: "[color=#315582][b]Abrir Calendario[/b][/color]"
 		size_hint: None, None
 		width: 100
 		pos_hint: {"center_x": 0.5, "center_y": 0.5}
-		on_release: ap.calendario.show_date_picker()
+		md_bg_color: 0.93, 0.69, 0.63, 0.2
+		on_release: root.show_date_picker()
 
 	MDRoundFlatButton:
 		id: boton100000
-		text: "Volver pantalla principal"
+		text: "[color=#315582][b]Volver pantalla principal[/b][/color]"
 		size_hint: None, None
 		width: 100
-		pos_hint: {"center_x": 0.5, "center_y": 0.5}
+		pos_hint: {"center_x": 0.5, "center_y": 0.4}
+		md_bg_color: 0.93, 0.69, 0.63, 0.2
 		on_release: app.root.current = "Pantalla Principal"
 
 	

@@ -24,6 +24,7 @@ class etapas(Screen):
 class calendario(Screen):
 #	def get_date(self, date):
 #		print(date)
+#		self.ids.ejemplo_id.text = "Hola"
 
 	def show_date_picker(self):
 		picker = MDDatePicker()

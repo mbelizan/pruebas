@@ -23,11 +23,21 @@ class etapas(Screen):
 
 class calendario(Screen):
 #	def get_date(self, date):
+#		self.ids.ejemplo_id.text
 #		print(date)
-#		self.ids.ejemplo_id.text = "Hola"
+
+	#Click OK
+	def on_save(self,instance, value, date_range):
+		self.ids.text_calendario.text = str(value)
+	#	self.ids.text_calendario.text = f'{str(date_range[0])} - {str(date_range[-1])}'
+
+	#Click Cancel
+	def on_cancel(self, instance, value, date_range):
+		self.ids.text_calendario.text = "--"
 
 	def show_date_picker(self):
 		picker = MDDatePicker()
+		picker.bind(on_save=self.on_save, on_cancel=self.on_cancel)
 		picker.open()
 
 class SIC(MDApp):

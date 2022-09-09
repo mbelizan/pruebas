@@ -194,7 +194,7 @@
 	name: "calendario"
 
 	MDLabel:
-		id: texto_calendario
+		
 		markup: True
 		text: "[i]Pantalla en progreso[/i]"
 		font_size: 16
@@ -209,12 +209,18 @@
 		md_bg_color: 0.93, 0.69, 0.63, 0.2
 		on_release: root.show_date_picker()
 
+	MDLabel:
+		id: text_calendario
+		text: "-"
+		size_hint: None, None
+		pos_hint: {"center_x": 0.5, "center_y": 0.35}
+
 	MDRoundFlatButton:
 		id: boton100000
 		text: "[color=#315582][b]Volver pantalla principal[/b][/color]"
 		size_hint: None, None
 		width: 100
-		pos_hint: {"center_x": 0.5, "center_y": 0.4}
+		pos_hint: {"center_x": 0.5, "center_y": 0.2}
 		md_bg_color: 0.93, 0.69, 0.63, 0.2
 		on_release: app.root.current = "Pantalla Principal"
 

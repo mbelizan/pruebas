@@ -22,14 +22,12 @@ class etapas(Screen):
 
 
 class calendario(Screen):
-	def get_date(self, date):
-		'''
-		:type date: <class 'datetime.date'>
-		'''
+#	def get_date(self, date):
+#		print(date)
 
 	def show_date_picker(self):
-		date_dialog = MDDatePicker(callback=self.get_date)
-		date_dialog.open()
+		picker = MDDatePicker()
+		picker.open()
 
 class SIC(MDApp):
 
@@ -42,14 +40,13 @@ class SIC(MDApp):
 	
 	def build (self):
 
-
 		Builder.load_file('pantallas.kv')
 		
 		ap = ScreenManager()
 		ap.add_widget(login(name= "Login"))
 		ap.add_widget(pantallaPrincipal(name= "Pantalla Principal"))
 		ap.add_widget(clientes(name= "clientes"))
-		ap.add_widget(clientes(name= "etapas"))
+		ap.add_widget(etapas(name= "etapas"))
 		ap.add_widget(calendario(name= "calendario"))
 		
 		return ap

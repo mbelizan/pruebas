@@ -331,7 +331,7 @@ KV = """
 
 
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_calendario_R1
         		text: "[color=#315582][b]Seleccionar Fecha[/b][/color]"
         		size_hint: None, None
@@ -340,7 +340,7 @@ KV = """
         		md_bg_color: 0.93, 0.69, 0.63, 0.2
         		on_release: root.show_date_picker()
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_reloj_R1
         		text: "[color=#315582][b]Seleccionar Horario[/b][/color]"
         		size_hint: None, None
@@ -368,7 +368,7 @@ KV = """
         		size_hint: None, None
         		pos_hint: {"center_x": 0.5, "center_y": 0.5}
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_calendario_R2
         		text: "[color=#315582][b]Seleccionar Fecha[/b][/color]"
         		size_hint: None, None
@@ -377,7 +377,7 @@ KV = """
         		md_bg_color: 0.93, 0.69, 0.63, 0.2
         		on_release: root.show_date_picker()
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_reloj_R2
         		text: "[color=#315582][b]Seleccionar Horario[/b][/color]"
         		size_hint: None, None
@@ -398,7 +398,7 @@ KV = """
         		size_hint: None, None
         		pos_hint: {"center_x": 0.5, "center_y": 0.4}
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_calendario_R3
         		text: "[color=#315582][b]Seleccionar Fecha[/b][/color]"
         		size_hint: None, None
@@ -407,7 +407,7 @@ KV = """
         		md_bg_color: 0.93, 0.69, 0.63, 0.2
         		on_release: root.show_date_picker()
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_reloj_R3
         		text: "[color=#315582][b]Seleccionar Horario[/b][/color]"
         		size_hint: None, None
@@ -428,7 +428,7 @@ KV = """
         		size_hint: None, None
         		pos_hint: {"center_x": 0.5, "center_y": 0.3}
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_calendario_R4
         		text: "[color=#315582][b]Seleccionar Fecha[/b][/color]"
         		size_hint: None, None
@@ -437,7 +437,7 @@ KV = """
         		md_bg_color: 0.93, 0.69, 0.63, 0.2
         		on_release: root.show_date_picker()
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_reloj_R4
         		text: "[color=#315582][b]Seleccionar Horario[/b][/color]"
         		size_hint: None, None
@@ -458,7 +458,7 @@ KV = """
         		size_hint: None, None
         		pos_hint: {"center_x": 0.5, "center_y": 0.2}
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_calendario_R5
         		text: "[color=#315582][b]Seleccionar Fecha[/b][/color]"
         		size_hint: None, None
@@ -467,7 +467,7 @@ KV = """
         		md_bg_color: 0.93, 0.69, 0.63, 0.2
         		on_release: root.show_date_picker()
 
-        	MDRoundFlatButton:
+        	MDRaisedButton:
         		id: abrir_reloj_R5
         		text: "[color=#315582][b]Seleccionar Horario[/b][/color]"
         		size_hint: None, None
